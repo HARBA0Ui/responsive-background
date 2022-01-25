@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    background: url('img.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+
+h1{
+    font-size: calc(3rem + 2vw);
+    font-family: "poppins",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width : 1200px){
+    .container-fluid{
+        min-height: 70vh;
+    }
+}
+
+@media (max-width : 858px){
+    .container-fluid{
+        min-height: 50vh;
+    }
+    h1{
+        font-size: calc(2rem + 2vw);
+    }
+}
+
+@media (max-width : 600px){
+    .container-fluid{
+        min-height: 35vh;
+    }
+    h1{
+        font-size: calc(1.5rem + 2vw);
+    }
+}
